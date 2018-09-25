@@ -18,7 +18,7 @@ int main()
 	cin>>test_case ;
 
 	for (int t = 1; t<= test_case; t++)
-    {
+    	{
 		cin>>n ;
 
 		m.clear() ;
@@ -28,15 +28,15 @@ int main()
 		int top = 0 ;
 
 		for (int i = 0; i < n; i++)
-        {
+       		{
 			cin>>temp.first>>temp.second ;
 			v.push_back(temp);
 		}
 
 		for (int i = 0; i < v.size(); i++)
-        {
+        	{
 			for (int j = i + 1; j < v.size(); j++)
-            {
+            		{
 				x = v[i].first + v[j].first ;
 				y = v[i].second + v[j].second ;
 				temp.first = x ;
@@ -49,10 +49,10 @@ int main()
 		sort(m.begin(), m.end()) ;
 
 		for (int i = 1; i < m.size(); i++)
-        {
+        	{
 			if((m[i].first == m[i-1].first) && (m[i].second == m[i-1].second)) top++ ;
 			else
-            {
+            		{
 				ans = ans + (top * (top + 1))/2 ;
 				top = 0 ;
 			}
