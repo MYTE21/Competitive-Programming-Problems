@@ -28,13 +28,13 @@ int main()
 		int top = 0 ;
 
 		for (int i = 0; i < n; i++)
-       		{
+       	{
 			cin>>temp.first>>temp.second ;
 			v.push_back(temp);
 		}
 
 		for (int i = 0; i < v.size(); i++)
-        {
+        	{
 			for (int j = i + 1; j < v.size(); j++)
             		{
 				x = v[i].first + v[j].first ;
