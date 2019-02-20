@@ -20,4 +20,6 @@ int main()
 		commonDivision *= i ;
 	}
 	cout<<commonDivision<<endl ;
+	
+	return 0 ;
 }
